@@ -45,9 +45,9 @@ gulp.task('docs', ['server'], function () {
     .pipe(open({uri: 'http://localhost:9001/docs/'}))
 })
 
-gulp.task('server', function () {
+gulp.task('docs', function () {
   connect.server({
-    root: 'docs',
+    root: 'myapp',
     port: 9001,
     livereload: true
   })
